@@ -8,7 +8,7 @@ class PickUp extends React.Component {
                 {/* !! make hoverable */}
                 <Button
                     title="Pick up card"
-                    onClick = {this.props.handlePickUp}
+                    onPress={this.props.handlePickUp}
                     className="button">
                 </Button>
             </View>

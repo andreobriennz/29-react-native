@@ -25,7 +25,7 @@ class Scores extends React.Component {
                         {this.state.players.map(function(player, index){
                             return (
                                 <View key={index} className="score">
-                                    <Text className="strong big">{ player.name }</Text>
+                                    <Text style={{fontWeight: 'bold'}} className="strong big">{ player.name }</Text>
                                     <Text className="p">
                                         Population: { player.stats.population } {"\n"}
                                         Shelters: { player.stats.shelters } {"\n"}
