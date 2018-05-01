@@ -1,4 +1,5 @@
 import React from 'react'
+import {AppRegistry, StyleSheet, Text, View } from 'react-native';
 
 class Scores extends React.Component {
     constructor (props) {
@@ -12,31 +13,31 @@ class Scores extends React.Component {
 
     render() {
         return (
-            <div>
-                <section className="currentPlayer">
-                    <h2>{ this.props.name }'s turn!</h2>
-                </section>
+            <View>
+                <View className="currentPlayer">
+                    <Text className="h2">{ this.props.name }'s turn!</Text>
+                </View>
                 
-                <section className="scores">
-                    <strong className="large">Round { this.props.round }</strong>
+                <View className="section scores">
+                    <Text className="strong large">Round { this.props.round }</Text>
 
-                    <div className="scores">
+                    <View className="scores">
                         {this.state.players.map(function(player, index){
                             return (
-                                <div key={index} className="score">
-                                    <strong className="big">{ player.name }</strong>
-                                    <p>
-                                        Population: { player.stats.population } <br/>
-                                        Shelters: { player.stats.shelters } <br/>
-                                        Drones: { player.stats.drones } <br/>
-                                        Bombers: { player.stats.bombers } <br/>
-                                    </p>
-                                </div>
+                                <View key={index} className="score">
+                                    <Text className="strong big">{ player.name }</Text>
+                                    <Text className="p">
+                                        Population: { player.stats.population } {"\n"}
+                                        Shelters: { player.stats.shelters } {"\n"}
+                                        Drones: { player.stats.drones } {"\n"}
+                                        Bombers: { player.stats.bombers } {"\n"}
+                                    </Text>
+                                </View>
                             )
                         })}
-                    </div>
-                </section>
-            </div>
+                    </View>
+                </View>
+            </View>
         )
     };
 };
