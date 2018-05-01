@@ -152,22 +152,7 @@ export default class Game extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+
 });
 
 // AppRegistry.registerComponent('Game', () => Game);
-
-    // render() {
-    //     return (
-    //     <View style={styles.container}>
-    //         <Text>Open up Game.js to start working on your Game! :D</Text>
-    //         <Text>Changes you make will automatically reload.</Text>
-    //         <Text>Shake your phone to open the developer menu.</Text>
-    //     </View>
-    //     );
-    // }
