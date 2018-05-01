@@ -1,15 +1,17 @@
 import React from 'react'
+import {StyleSheet, Text, View, Button } from 'react-native';
 
 class PickUp extends React.Component {    
     render() {
         return (
-            <section className="PickUp">
-                <button
+            <View className="section PickUp">
+                {/* !! make hoverable */}
+                <Button
+                    title="Pick up card"
                     onClick = {this.props.handlePickUp}
                     className="button">
-                    Pick up card
-                </button>
-            </section>
+                </Button>
+            </View>
         )
     };
 };
